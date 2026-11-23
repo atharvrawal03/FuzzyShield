@@ -1,0 +1,60 @@
+{
+  "dataset": "NSL-KDD KDDTrain+ / KDDTest+ official split",
+  "train_samples": 125973,
+  "test_samples": 22544,
+  "features": 41,
+  "preprocessed_features": 122,
+  "ann_best_params": {
+    "alpha": 0.01,
+    "hidden_layer_sizes": [
+      64,
+      32
+    ]
+  },
+  "anfis_rules": 6,
+  "anfis_training_samples": 24000,
+  "results": [
+    {
+      "model": "ANN",
+      "accuracy": 0.8047817601135557,
+      "precision": 0.9699063753901025,
+      "recall": 0.6780955349489597,
+      "f1": 0.7981655583581747,
+      "roc_auc": 0.9198708770910146,
+      "false_positive_rate": 0.027803521779425393,
+      "training_seconds": 216.0745492069982,
+      "inference_ms_per_sample": 0.012704367014712331,
+      "confusion_matrix": [
+        [
+          9441,
+          270
+        ],
+        [
+          4131,
+          8702
+        ]
+      ]
+    },
+    {
+      "model": "ANFIS",
+      "accuracy": 0.7068399574166075,
+      "precision": 0.9853399875233937,
+      "recall": 0.49232447596041456,
+      "f1": 0.6565861262665628,
+      "roc_auc": 0.9192641146639638,
+      "false_positive_rate": 0.009679744619503656,
+      "training_seconds": 2.4440525420359336,
+      "inference_ms_per_sample": 0.003629268631199441,
+      "confusion_matrix": [
+        [
+          9617,
+          94
+        ],
+        [
+          6515,
+          6318
+        ]
+      ]
+    }
+  ]
+}
